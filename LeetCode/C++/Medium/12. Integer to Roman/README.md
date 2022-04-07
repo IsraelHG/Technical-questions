@@ -1,5 +1,7 @@
-# 13. Roman to Integer
-Roman numerals are represented by seven different symbols: `I, V, X, L, C, D` and `M.`
+# 12. Integer to Roman
+
+Roman numerals are represented by seven different symbols: `I, V, X, L, C, D` and `M`.
+
 
 |Symbol|Value|
 |----|----|
@@ -20,33 +22,32 @@ Roman numerals are usually written largest to smallest from left to right. Howev
 - `I` can be placed before `V` (5) and `X` (10) to make 4 and 9. 
 - `X` can be placed before `L` (50) and `C` (100) to make 40 and 90. 
 - `C` can be placed before `D` (500) and `M` (1000) to make 400 and 900.
-Given a roman numeral, convert it to an integer.
+
+Given an integer, convert it to a roman numeral.
 
 ---
 
 **Example 1:**
 ```
-Input: s = "III"
-Output: 3
-Explanation: III = 3.
+Input: num = 3
+Output: "III"
+Explanation: 3 is represented as 3 ones.
 ```
 
 **Example 2:**
 ```
-Input: s = "LVIII"
-Output: 58
-Explanation: L = 50, V= 5, III = 3.
+Input: num = 58
+Output: "LVIII"
+Explanation: L = 50, V = 5, III = 3.
 ```
 
 **Example 3:**
 ```
-Input: s = "MCMXCIV"
-Output: 1994
+Input: num = 1994
+Output: "MCMXCIV"
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 ```
 
 **Constraints:**
 
-- `1 <= s.length <= 15`
-- `s` contains only the characters `('I', 'V', 'X', 'L', 'C', 'D', 'M')`.
-- It is **guaranteed** that s is a valid roman numeral in the range `[1, 1000]`.
+- `1 <= num <= 3999` 
