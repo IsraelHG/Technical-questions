@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <string>
 #include <cassert>
 #include "romantoint.h"
 
@@ -27,6 +26,7 @@ int main() {
 	while (getline(f, line)) {
 		count++;
 		test(obj.romanToInt(line) == count);
+		cout << obj.romanToInt(line) << endl;
 	}
 	f.close();
 

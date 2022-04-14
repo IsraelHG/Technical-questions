@@ -14,13 +14,12 @@ Roman::Roman() {
 int Roman::romanToInt(string s) {   
 
     int sum = 0;
-    //Reads from left to right. (i.e. "XVIII")
-    for (int i = 0; i <= s.length() - 1; i++) {
-        if (m[s[i]] >= m[s[i + 1]]) {
-            sum += m[s[i]];
+    for (int i = 0; i <= s.length() - 1; i++) { //Cycle through each 'char' of given roman string "s" from left to right.
+        if (m[s[i]] >= m[s[i + 1]]) {           //Comapres current char to next char and decides if to add or not.
+            sum += m[s[i]];                     //(i.e. "XVIII", if "X" > "V", sum += "key value of "X" from hashmap")
         }
         else {
-            sum -= m[s[i]];
+            sum -= m[s[i]];                     //(i.e. "IX", if "I" !> "X", sum -= "key value of "I" from hashmap")
         }
     }
     return sum;

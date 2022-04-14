@@ -15,15 +15,15 @@ inline void _test(const char* expression, const char* file, int line)
 
 int main() {
 
-    int target = 18; //change target to numbers that add up to 2 numbers in our vector.
+    int target = 18;    //change the value of target to a number that adds up to 2 numbers in our vector.
     vector<int> v;
     vector<int> v_final;
-    v.push_back(5); //index 0
-    v.push_back(8); //index 1
-    v.push_back(3); //index 2
-    v.push_back(4); //index 3
-    v.push_back(10); //index 4
-    v.push_back(12); //index 5
+    v.push_back(5);     //index 0
+    v.push_back(8);     //index 1
+    v.push_back(3);     //index 2
+    v.push_back(4);     //index 3
+    v.push_back(10);    //index 4
+    v.push_back(12);    //index 5
 
     cout << "Vector v: ";
     for (int i = 0; i < v.size(); i++) {
