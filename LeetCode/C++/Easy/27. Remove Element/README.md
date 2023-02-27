@@ -62,7 +62,6 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 # Explanation
 
 Suppose we have the following input vector `nums` and value `val`:
-
 ```
 main.cpp
 -------------------------------
@@ -77,7 +76,6 @@ We want to remove all occurrences of `val` from `nums` in-place.
 ## Step 1:
 
 We initialize two pointers, `i` and `j`, to 0:
-
 ```
 removeElement.cpp
 ----------
@@ -109,6 +107,7 @@ if (nums[i] != val) {
 }
 i++;
 ```
+
 If `nums[i]` is equal to `val`, we just increment `i`.
 ```
 removeElement.cpp
@@ -130,7 +129,6 @@ After the fourth iteration, `nums[j]` will be equal to `nums[3]`, which is 3, be
 ## Step 4:
 
 After the loop, `j` will be equal to the number of elements in the updated vector, which is the same as the number of elements in the original vector minus the number of occurrences of `val`. We return `j`.
-
 ```
 removeElement.cpp
 -----------------
@@ -143,7 +141,6 @@ In this example, `j` is 2, because there are two elements in the updated vector,
 ## Step 5:
 
 The original vector `nums` now contains the updated vector at the beginning, followed by any remaining elements (which may or may not be equal to `val`). We can print the updated vector using a loop:
-
 ```
 main.cpp
 -----------------------------
